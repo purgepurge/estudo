@@ -17,7 +17,7 @@ main {
     padding: 10px;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 05px 05px 15p black;
+    box-shadow: 05px 05px 15px black;
     margin-top: 200px;
 
 }
@@ -56,9 +56,14 @@ form {
     text-align: center;
 }
 
-nav{
+nav ul{
     list-style: none;
-    padding: 10px;
+    padding:35px 0;
     display: flex;
-    text-align: right;
+    justify-content: flex-start;
+    background-color: white;
 }
+
+nav li {
+    margin-right: 100px;
+} 
