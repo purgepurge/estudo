@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 p {
@@ -8,16 +8,20 @@ p {
 }
 
 body {
-    background-image: linear-gradient(to right, #4434EB, #5850AB)
+    background-image: url('../Media/img/Fundo2.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
 }
 
 main {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 600px;
     padding: 10px;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 05px 05px 15px black;
+    box-shadow: 0px 0px 12px black;
     margin-top: 200px;
 
 }
@@ -35,7 +39,7 @@ h2{
 
 h1{
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(129, 77, 7 ,0.7)
+    text-shadow: 1px 1px 2px rgba(129, 77, 7 ,0.7);
 }
 
 form {
@@ -46,7 +50,7 @@ form {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 10px;
-    margin-top: 250px;
+    margin-top: 0px;
 }
 
 .item {
@@ -54,16 +58,33 @@ form {
     color: white;
     padding: 60px;
     text-align: center;
+    font-size: 32px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.664);
 }
 
 nav ul{
     list-style: none;
-    padding:35px 0;
+    
     display: flex;
+    font-size: 32px;
+    align-items: center;
     justify-content: flex-start;
-    background-color: white;
+    background-color:rgba(127, 125, 235, 0.4);
 }
 
+
 nav li {
-    margin-right: 100px;
+    margin-right: auto
 } 
+
+.saibamais {
+    color: white;
+    background-color: rgba(56, 55, 107, 0.7);
+    display: block;
+    bottom: 5%;
+    left: 43%;
+    position:absolute;
+    margin: 3%;
+    font-size: 20px;
+    
+}
