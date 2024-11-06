@@ -9,7 +9,9 @@ public class Armadura extends Item {
 	
 	//Construtor
 	
-	public Armadura(int defesa, String tipo) {
+	public Armadura(String nome_Item, String descricao_Item ,int defesa, String tipo) {
+		nome_Item = this.nome_Item;
+		descricao_Item = this.descricao_Item;
 		defesa = this.defesa;
 		tipo = this.tipo;
 	}

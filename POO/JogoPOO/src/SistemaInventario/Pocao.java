@@ -8,8 +8,10 @@ public class Pocao extends Item{
 	
 	//construtor
 	
-	public Pocao(int restauracao) {
+	public Pocao(String nome_Item,String descricao_Item, int restauracao) {
 		restauracao = this.restauracao;
+		nome_Item = this.nome_Item;
+		descricao_Item = this.descricao_Item;
 	}
 	
 	public Pocao() {}

@@ -9,7 +9,9 @@ public class Arma extends Item{
 	
 	//construtor
 	
-	public Arma(int dano, String alcance) {
+	public Arma(String nome_Item, String descricao_Item, int dano, String alcance) {
+		nome_Item = this.nome_Item;
+		descricao_Item = this.descricao_Item;
 		dano = this.dano;
 		alcance = this.alcance;
 	}
