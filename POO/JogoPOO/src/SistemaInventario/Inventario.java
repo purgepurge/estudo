@@ -2,11 +2,11 @@ package SistemaInventario;
 
 public class Inventario {
 	//atributos
-	public Item item[];
+	public Item[] item;
 	
 	//construtor
 	
-	public Inventario (Item item[]) {
+	public Inventario (Item[] item) {
 		item = this.item;
 	}
 	

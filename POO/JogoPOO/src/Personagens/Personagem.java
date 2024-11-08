@@ -1,6 +1,7 @@
 package Personagens;
 
 import SistemaInventario.Inventario;
+import SistemaInventario.Pocao;
 
 public abstract class Personagem {
 	
@@ -10,12 +11,13 @@ public abstract class Personagem {
 	public String classe_Personagem;//define a classe do personagem
 	public int vida_Personagem;//define a vida do personagem
 	public int vidamax_Personagem;//define a vida maxima do personagem
-	public Inventario inventario_Personagem; // inventorio do personagem
+	public Inventario[] inventario_Personagem = new Inventario[20]; // inventorio do personagem
 	public int nivel_Personagem;// nivel do personagem
+	
 	
 	//construtores
 	
-	public Personagem(String nome_Personagem, String classe_Personagem, int vida_Personagem,int vidamax_Personagem, Inventario inventario_Personagem, int nivel_Personagem) {
+	public Personagem(String nome_Personagem, String classe_Personagem, int vida_Personagem,int vidamax_Personagem, Inventario[] inventario_Personagem, int nivel_Personagem) {
 		nome_Personagem = this.nome_Personagem;
 		classe_Personagem = this.classe_Personagem;
 		vida_Personagem = this.vida_Personagem;
@@ -52,17 +54,17 @@ public abstract class Personagem {
 		this.vida_Personagem = vida_Personagem;
 	}
 
-	public Inventario getInventario_Personagem() {
+	public Inventario[] getInventario_Personagem() {
 		return inventario_Personagem;
 	}
 
-	public void setInventario_Personagem(Inventario inventario_Personagem) {
+	public void setInventario_Personagem(Inventario[] inventario_Personagem) {
 		this.inventario_Personagem = inventario_Personagem;
 	}
 	
 	//metodos
 	
-	public abstract void usarMagia(); //metodo abstrato que vai server para as classes filhas utilizarem magia
+	public abstract void usarMagia(); //metodo abstrato que vai ser usado para as classes filhas utilizarem magia
 	
 	public void exibirStatus() { //metodo que mostra informações do personagem
 		System.out.println("Nome: "+ nome_Personagem);
@@ -79,8 +81,11 @@ public abstract class Personagem {
 		
 	}
 	
-	public void usarItem() {
-		
+	public void listarInventario() {
+		for (Inventario item : inventario_Personagem ) {
+			System.out.println(item);
+			
+		}
 	}
 	
 	

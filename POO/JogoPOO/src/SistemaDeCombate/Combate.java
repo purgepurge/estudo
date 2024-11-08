@@ -4,8 +4,12 @@ import Personagens.Personagem;
 
 public class Combate {
 	
+	//Atributos
+	
 	public Personagem jogador;
 	public Inimigo inimigo;
+	
+	//Construtores
 	
 	public Combate(Personagem jogador, Inimigo inimigo) {
 		jogador = this.jogador;
@@ -13,7 +17,9 @@ public class Combate {
 	}
 	
 	public Combate() {}
-
+	
+	//Getters and Setters
+	
 	public Personagem getJogador() {
 		return jogador;
 	}
@@ -30,6 +36,6 @@ public class Combate {
 		this.inimigo = inimigo;
 	}
 	
-	
+	//Metodos
 
 }
